@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_4"
+    android:id="@+id/alloutfrag"
+    tools:context=".Allout">
+
+    <include
+        android:id="@+id/bottombar"
+        layout="@layout/bottombar"></include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/amount1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount(in Rs)"
+                    android:textColor="@color/colorMAinText"
+                    android:textSize="22dp"
+                    android:fontFamily="@font/baloo" />
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"></Space>
+
+                <EditText
+                    android:id="@+id/amounte1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_login"
+                    android:textColor="@color/colorMAinText"
+                    android:ems="8"
+                    android:fontFamily="@font/baloo"
+                    android:inputType="number"
+                    android:textAlignment="center" />
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="50dp"></Space>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/shares"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Shares"
+                    android:textSize="22dp"
+                    android:fontFamily="@font/baloo"
+                    android:textColor="@color/colorMAinText"
+                     />
+
+                <Space
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"></Space>
+
+                <EditText
+                    android:id="@+id/sharese1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_login"
+                    android:textColor="@color/colorMAinText"
+                    android:ems="8"
+                    android:fontFamily="@font/baloo"
+                    android:inputType="number"
+                    android:textAlignment="center" />
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="50dp"></Space>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Avg Buy"
+                    android:textSize="22dp"
+                    android:fontFamily="@font/baloo"
+                    android:textColor="@color/colorMAinText"
+                     />
+
+                <Space
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"></Space>
+
+                <TextView
+                    android:id="@+id/buye1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:fontFamily="@font/baloo"
+                    android:textColor="@color/colorMAinText"
+                    android:textSize="25dp" />
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="50dp"></Space>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/check1"
+                    android:layout_width="86dp"
+                    android:layout_height="37dp"
+                    android:enabled="false"
+                    android:layout_marginStart="100dp"
+                    android:text="Check">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/clear1"
+                    android:layout_width="86dp"
+                    android:layout_height="37dp"
+                    android:enabled="false"
+                    android:layout_marginStart="50dp"
+                    android:text="Clear">
+
+                </Button>
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="50dp"></Space>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/currentrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current Rate"
+                    android:textSize="22dp"
+                    android:fontFamily="@font/baloo"
+                    android:textColor="@color/colorMAinText"
+                     />
+
+                <Space
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"></Space>
+
+                <EditText
+                    android:id="@+id/currentratee1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_login"
+                    android:ems="8"
+                    android:fontFamily="@font/baloo"
+                    android:textColor="@color/colorMAinText"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center" />
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="50dp"></Space>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/show1"
+                    android:layout_width="86dp"
+                    android:layout_height="37dp"
+                    android:enabled="false"
+                    android:layout_marginStart="100dp"
+                    android:text="Show">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/clear2"
+                    android:layout_width="86dp"
+                    android:layout_height="37dp"
+                    android:enabled="false"
+                    android:layout_marginStart="50dp"
+                    android:text="Clear">
+
+                </Button>
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="50dp"></Space>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/currentamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fontFamily="@font/baloo"
+                    android:textColor="@color/colorMAinText"
+                    android:textSize="25dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

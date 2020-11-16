@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_4"
+    tools:context=".WAvg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/prevclose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/edit_login"
+                    android:ems="10"
+                    android:fontFamily="@font/baloo"
+                    android:textSize="25dp"
+                    android:hint="W. Avg./Sell Rate"
+                    android:textColor="@color/colorMAinText"
+                    android:textColorHint="@color/colorMAinText"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center" />
+
+
+                <Space
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"></Space>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:text="Buy"
+                    android:textColor="@color/colorMAinText"
+                    app:fontFamily="@font/aclonic"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="30dp"></Space>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="Opportunity -"
+                    android:fontFamily="@font/baloo"
+                    android:textColor="@color/colorMAinText"
+                    android:textSize="25dp" />
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"></Space>
+
+                <TextView
+                    android:id="@+id/fbuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baloo"
+                    android:textColor="@color/colorMAinText"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="30dp"></Space>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="Should Buy - "
+                    android:fontFamily="@font/baloo"
+                    android:textColor="@color/colorMAinText"
+                    android:textSize="25dp" />
+
+                <Space
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"></Space>
+
+                <TextView
+                    android:id="@+id/sbuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baloo"
+                    android:textColor="@color/colorMAinText"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="30dp"></Space>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="Must Buy - "
+                    android:fontFamily="@font/baloo"
+                    android:textColor="@color/colorMAinText"
+                    android:textSize="25dp" />
+
+                <Space
+                    android:layout_width="65dp"
+                    android:layout_height="50dp"></Space>
+
+                <TextView
+                    android:id="@+id/tbuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baloo"
+                    android:textColor="@color/colorMAinText"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="30dp"></Space>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/show1"
+                    android:layout_width="86dp"
+                    android:layout_height="37dp"
+                    android:layout_marginStart="80dp"
+                    android:enabled="false"
+                    android:text="Show">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/clear1"
+                    android:layout_width="86dp"
+                    android:layout_height="37dp"
+                    android:enabled="false"
+                    android:layout_marginStart="50dp"
+                    android:text="Clear">
+
+                </Button>
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="30dp"></Space>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/prev1close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/edit_login"
+                    android:ems="10"
+                    android:fontFamily="@font/baloo"
+                    android:textSize="25dp"
+                    android:hint="W. Avg./Buy Rate"
+                    android:textColorHint="@color/colorMAinText"
+                    android:textColor="@color/colorMAinText"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center" />
+
+                <Space
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"></Space>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:text="Sell"
+                    android:textColor="@color/colorMAinText"
+                    app:fontFamily="@font/aclonic"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="30dp"></Space>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="Opportunity - "
+                    android:fontFamily="@font/baloo"
+                    android:textColor="@color/colorMAinText"
+                    android:textSize="25dp" />
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"></Space>
+
+                <TextView
+                    android:id="@+id/fsell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baloo"
+                    android:textColor="@color/colorMAinText"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="30dp"></Space>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="Should Sell -"
+                    android:fontFamily="@font/baloo"
+                    android:textColor="@color/colorMAinText"
+                    android:textSize="25dp" />
+
+                <Space
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"></Space>
+
+                <TextView
+                    android:id="@+id/ssell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baloo"
+                    android:textColor="@color/colorMAinText"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="30dp"></Space>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="Must Sell -"
+                    android:fontFamily="@font/baloo"
+                    android:textColor="@color/colorMAinText"
+                    android:textSize="25dp" />
+
+                <Space
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"></Space>
+
+                <TextView
+                    android:id="@+id/tsell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baloo"
+                    android:textColor="@color/colorMAinText"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="30dp"></Space>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/show2"
+                    android:layout_width="86dp"
+                    android:layout_height="37dp"
+                    android:enabled="false"
+                    android:layout_marginStart="80dp"
+                    android:text="Show">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/clear2"
+                    android:layout_width="86dp"
+                    android:layout_height="37dp"
+                    android:enabled="false"
+                    android:layout_marginStart="50dp"
+                    android:text="Clear">
+
+                </Button>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

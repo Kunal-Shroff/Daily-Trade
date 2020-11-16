@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_4"
+    tools:context=".Tip">
+
+    <include
+        android:id="@+id/bottombar"
+        layout="@layout/bottombar"></include>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Previous Close should be checked until the opening bell.After the opening bell, for more accurate results Weighted Avg should be checked. "
+                    android:textColor="@color/colorMAinText"
+                    android:fontFamily="@font/baloo"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="20dp"></Space>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="All the rates shown in the app are exclusive of Brokerage Charges.Brokerage Charges may apply depending on the paltform used for Trading."
+                android:textColor="@color/colorMAinText"
+                android:fontFamily="@font/baloo"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="20dp"></Space>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="The app is meant for Daily Trading,+BTSTT i.e.(Buy Today Sell Today or Tomorrow)."
+                    android:textColor="@color/colorMAinText"
+                    android:fontFamily="@font/baloo"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+
+            <Space
+            android:layout_width="50dp"
+            android:layout_height="20dp"></Space>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Stock market is also subject to market or systematic risk.There is no way to completely control the market.App is not responsible for any losses occured."
+                    android:textColor="@color/colorMAinText"
+                    android:fontFamily="@font/baloo"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
